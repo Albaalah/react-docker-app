@@ -15,11 +15,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docker:build": "docker build -f Dockerfile.dev -t albaalah/simple-docker:latest .",
-    "docker:run": "docker run -it -p 3000:3000 albaalah/simple-docker",
+    "docker:build": "docker build -f Dockerfile.dev -t albaalah/react-dev-docker:latest .",
+    "docker:run": "docker run -it -p 3000:3000 albaalah/react-dev-docker",
     "compose:build": "docker-compose up --build",
     "compose:run": "docker-compose up",
-    "compose:stop": "docker-compose down"
+    "compose:stop": "docker-compose down",
+    "build:prod": "docker build -t albaalah/react-prod-docker:latest .",
+    "run:prod": "docker run -p 3000:80 albaalah/react-prod-docker"
   },
   "eslintConfig": {
     "extends": "react-app"
