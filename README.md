@@ -13,11 +13,18 @@ To run simple react-docker app
  - This will launch at [http://localhost:3000](http://localhost:3000)
 
 ### Docker-compose or main branch
-To run the react app with docker compose
+To run the react app with docker compose in development mode
  - To build and run
     `npm run compose:build`
  - To only run if it is built
 	 `npm run compose:run`
  - To gracefully stop all containers
 	 `npm run compose:stop`
- - This will launch at [http://localhost:3000](http://localhost:3000)
+
+To run the react app with docker compose in production mode
+ - To build
+    `npm run build:prod`
+ - To run
+	 `npm run run:prod`
+	 
+ This will launch the app at [http://localhost:3000](http://localhost:3000)
